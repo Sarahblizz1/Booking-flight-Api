@@ -1,4 +1,4 @@
-const Flight = require("../model/Flight");
+const {Flight} = require("../model/Flight");
 const {v4: uuid} = require("uuid");
 
 
