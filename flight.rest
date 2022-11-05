@@ -1,4 +1,30 @@
-@url = "http://localhost:3700/ HTTP/1.1"
+@url = "http://localhost:3700/"
 
 
 GET http://localhost:3700/flight HTTP/1.1
+
+###
+GET http://localhost:3700/flight HTTP/1.1
+
+###
+POST http://localhost:3700/flight HTTP/1.1
+Content-Type: application/json
+
+    {
+        "title": "flight to canada",
+        "time": "1pm",
+        "price": "26000",
+        "date": "26-06-2022"
+    }
+###
+PUT http://localhost:3700/flight HTTP/1.1
+Content-Type: application/json
+{
+        "title": "flight to korea",
+        "time": "2pm",
+        "price": "6000",
+        "date": "26-06-2022"
+    }
+
+###
+DELETE  http://localhost:3700/flight HTTP/1.1
